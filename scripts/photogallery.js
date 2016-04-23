@@ -6,14 +6,11 @@ jQuery(function(){
 	photoPaneWidth = jQuery("#maingallerydiv #photopane").width;
 	galleryImages = [];
 	loadGallery();
-	jQuery(window).resize(function(){
-		console.log("Test");
-		var resizeTimer;
+	
+	var resizeTimer;
+	jQuery(window).on('resize',function(){
 		clearTimeout(resizeTimer);
-		resizeTimer = setTimeout(function() {
-			// Run code here, resizing has "stopped"
-			resizeGallery(true);
-		}, 500);
+		resizeTimer = setTimeout(resizeGallery, 250, true);
 	});
 });
 
