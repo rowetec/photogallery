@@ -1,0 +1,72 @@
+body {
+	background-image: linear-gradient(to bottom, #dddbd1, #d2dbdc);
+}
+#maingallerydiv {
+	animation: 0.3s cubic-bezier(0.1, 0.82, 0.25, 1) 0s normal none 1 running app-enter;
+	border-radius: 3px;
+	width: calc(100% - 100px);
+	height: calc(100% - 38px);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+	background-color: #f7f7f7;
+	margin: auto;
+}
+#maingallerydiv #sidebar {
+	height: 100%;
+	width: 199px;
+	background-color: #DEDEDE;
+	float:left;
+	border-radius: 3px 0px 0px 3px;
+	border-right: 1px solid #C7C7C7;
+}
+
+#maingallerydiv #content {
+	height: 100%;
+	float:left;
+	width: calc(100% - 200px);
+}
+
+#maingallerydiv #content #filter {
+	height: 50px;
+	width: 100%;
+	background-color:#ebccff;
+	border-radius: 0px 3px 0px 0px;
+	border-bottom: 1px solid #C7C7C7;
+}
+
+#maingallerydiv #content #photopane {
+	position:relative;
+	width: 100%;
+	overflow-y: auto;
+	height:calc(100% - 50px);	
+	-webkit-overflow-scrolling: touch;
+  /*  -webkit-filter: blur(10px);
+    filter: blur(10px);
+	opacity: 0.5; */
+}
+#maingallerydiv #content #photopane #spacer {
+	float: left;
+	height: 100%;
+	width: 0px;
+}
+#maingallerydiv #content #photopane .albumimagecontainer{
+	/*position:relative;
+	float:left;*/
+	position: absolute;
+}
+
+#maingallerydiv #content #photopane .albumimagehorizonalalign{
+	height: 100%;
+	position:relative;
+	margin: auto;
+}
+	
+#maingallerydiv #content #photopane .albumimage{
+	position:absolute;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 0px;
+}
+
+#maingallerydiv #content #photopane .albumimage img{
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
