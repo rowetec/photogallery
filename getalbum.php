@@ -1,5 +1,5 @@
 <?php
-$path    = 'photos';
+$path    = 'photos/thumbs';
 $files = scandir($path);
 $album = [];
 $i = 0;

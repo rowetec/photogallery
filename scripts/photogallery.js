@@ -41,7 +41,7 @@ loadGallery = function(){
 			i++;
 		});
 		galleryImages.forEach(function(item){
-			html = html + '<div class="albumimagecontainer"><div class="albumimagehorizonalalign"><div class="albumimage"><img src="photos/'+item.filePath+'" height="'+item.thumbHeight+'" width="'+item.thumbWidth+'" /></div></div></div>';
+			html = html + '<div class="albumimagecontainer"><div class="albumimagehorizonalalign"><div class="albumimage"><img src="photos/thumbs/'+item.filePath+'" height="'+item.thumbHeight+'" width="'+item.thumbWidth+'" /></div></div></div>';
 		});
 		
 		jQuery("#maingallerydiv #photopane").html(html);
