@@ -33,6 +33,12 @@ body {
 	border-bottom: 1px solid #C7C7C7;
 }
 
+#maingallerydiv #content #filter #thumbsize {
+	float: right;
+	margin-right: 30px;
+	margin-top: 10px;
+}
+
 #maingallerydiv #content #photopane {
 	position:relative;
 	width: 100%;
@@ -54,7 +60,7 @@ body {
 	position: absolute;
 }
 
-#maingallerydiv #content #photopane .albumimagehorizonalalign{
+#maingallerydiv #content #photopane .albumimagehorizontalalign{
 	height: 100%;
 	position:relative;
 	margin: auto;
