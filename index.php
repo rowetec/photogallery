@@ -1,3 +1,8 @@
+<?php
+require_once("inc/config.php.inc");
+require_once("inc/dbconnection.php.inc");
+require_once("inc/auth.php.inc");
+?>
 
 <html>
 
@@ -13,6 +18,9 @@
 </head>
 <body>
 	<div id="maingallerydiv">
+	<?php
+	if (loggedIn()){
+	?>
 		<div id="sidebar">
 		</div>
 		<div id="content">
@@ -28,6 +36,20 @@
 			</div>
 		</div>
 	</div>
+	<?php
+	}
+	else {
+	?>
+	<form class="form-signin" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+        <h4 class="form-signin-heading">Please login</h4>
+		<input type="text" class="form-control" name="username" placeholder="username" required autofocus></br>
+		<input type="password" class="form-control" name="password" placeholder="password" required>
+		<button class="btn btn-lg btn-primary btn-block" type="submit" name="login">Login</button>
+		<button class="btn btn-lg btn-primary btn-block" type="submit" name="register">Register</button>
+	</form>
+	<?php
+	}
+	?>	 
 </body>
 
 </html>

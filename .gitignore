@@ -1,2 +1,3 @@
-photos/full/**
-photos/thumbs/**
+photos/full/*.JPG
+photos/thumbs/*.JPG
+config.php.inc

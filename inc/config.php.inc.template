@@ -1,0 +1,11 @@
+<?php
+
+//SQL connection settings
+
+$sqlHostname	= "hostname";
+$sqlUser		= "username";
+$sqlPassword	= "password";
+
+$sqlDbName		= "databasename";
+
+?>
