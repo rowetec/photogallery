@@ -14,6 +14,24 @@
 <body>
 	<div id="maingallerydiv">
 		<div id="sidebar">
+			<div class="list-group">
+				<a href="#" class="list-group-item active">
+					<h4 class="list-group-item-heading">Chris Rowe</h4>
+				</a>
+				<div href="#" class="list-group-item">
+					<a href="#" class="list-group-item">Album 1</a>
+					<a href="#" class="list-group-item">Album 2</a>
+				</div>
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">Jo Rowe</h4>
+				</a>
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">Jack Payne</h4>
+				</a>
+				<a href="#" class="list-group-item active">
+					<h4 class="list-group-item-heading">Professional</h4>
+				</a>
+			</div>
 		</div>
 		<div id="content">
 			<div id="filter">

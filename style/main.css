@@ -17,6 +17,7 @@ body {
 	float:left;
 	border-radius: 3px 0px 0px 3px;
 	border-right: 1px solid #C7C7C7;
+	padding: 10px;
 }
 
 #maingallerydiv #content {
